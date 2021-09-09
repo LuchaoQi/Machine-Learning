@@ -1,24 +1,14 @@
 import numpy as np
 
-x = [-1,-1,0,2,0]
-y = [-2,0,0,1,1]
-data = np.array([x,y])
-
-
-
-
-
 def pca(data):
 
     covMatrix = np.cov(data,bias=True)
-
-
     eigenValues, eigenVectors = np.linalg.eig(covMatrix)
-
 
     idx = eigenValues.argsort()[::-1]   
     eigenValues = eigenValues[idx]
     eigenVectors = eigenVectors[:,idx]
+
 
     loadings = eigenVectors * np.sqrt(eigenValues)
 
@@ -28,4 +18,7 @@ def pca(data):
     print(np.dot(data.T,loadings[:,0]))
     
 
+x = [-1,-1,0,2,0]
+y = [-2,0,0,1,1]
+data = np.array([x,y])
 pca(data)

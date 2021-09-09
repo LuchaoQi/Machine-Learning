@@ -150,20 +150,20 @@ https://stackoverflow.com/a/40801571/11964524
 
 
 
-**Projected distance** 
-
-$\vec{a}*\vec{b} = \vert \vec{a}\vert * \vert \vec{b}\vert * cos\theta$
-
-which is equal to  $\vec{a}^T \cdot \vec{b}$  ([Dot product - Wikipedia](https://en.wikipedia.org/wiki/Dot_product))
-
-
-
 **Linear Algebra**
 
 [Transpose - Wikipedia](https://en.wikipedia.org/wiki/Transpose#Properties)
 $$
 \begin{aligned}A^{T}B &=-5\\ A^{T}B&=\left[ -5\right] \\ B^{T}A&=\left[ -5\right] ^{T}=\left[ -5\right] \end{aligned}
 $$
+
+
+**Projected distance** 
+
+[Dot product - Wikipedia](https://en.wikipedia.org/wiki/Dot_product)
+
+$\vec{a} \cdot \vec{b} = \vert \vec{a}\vert \cdot \vert \vec{b}\vert \cdot cos\theta = \vec{a} \cdot \vec{b}^T = \vec{a}^T \cdot \vec{b}$
+
 
 
 Let's get started
