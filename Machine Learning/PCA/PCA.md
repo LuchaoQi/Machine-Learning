@@ -38,7 +38,7 @@ https://builtin.com/data-science/step-step-explanation-principal-component-analy
 
 
 
-### [What are principal component scores?](https://stats.stackexchange.com/questions/222/what-are-principal-component-scores)
+### [<mark>What are principal component scores?</mark>](https://stats.stackexchange.com/questions/222/what-are-principal-component-scores)
 
 https://stats.stackexchange.com/a/282/272857
 
@@ -59,9 +59,7 @@ pca_model$x
 
 
 
-
-
-### [How to project a new vector onto PCA space?](https://stats.stackexchange.com/questions/2592/how-to-project-a-new-vector-onto-pca-space)
+[How to project a new vector onto PCA space?](https://stats.stackexchange.com/questions/2592/how-to-project-a-new-vector-onto-pca-space)
 
 
 
@@ -206,7 +204,11 @@ BAM! For covariance matrix S, $u_1$ is eigenvector and $\lambda$ is eigenvalue
 
 centering the data before PCA
 
-e.g. we have five 2-D data points after centering
+e.g. we have five 2-D data points after centering and the array is represented as numpy does here: [numpy.cov — NumPy v1.21 Manual](https://numpy.org/doc/stable/reference/generated/numpy.cov.html)
+
+> m : array_like
+>
+> A 1-D or 2-D array containing multiple variables and observations. Each row of *m* represents a variable, and each column a single observation of all those variables. Also see *rowvar* below.
 
 $$
 A = \begin{pmatrix}
@@ -215,9 +217,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-
 then we calculate covariance matrix
-
 
 $$
 \begin{align*}
