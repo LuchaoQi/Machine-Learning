@@ -132,17 +132,19 @@ https://stackoverflow.com/a/40801571/11964524
 
 
 
-### <mark>Intuition: why we use covariance matrix and why we use eigenpairs?</mark>
+## <mark>Intuition: why we use covariance matrix and why we use eigenpairs?</mark>
 
 > PCA - using eigen-decomposition of covariance matrix
 
 
 
+### Prerequisite
+
 **Definition of covariance matrix**
 
-https://www.bilibili.com/video/BV1aE411o7qd?p=23
+[【机器学习】【白板推导系列】【合集 1～23】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1aE411o7qd?p=23)
 
-https://en.wikipedia.org/wiki/Covariance_matrix#Definition
+[Covariance matrix - Wikipedia](https://en.wikipedia.org/wiki/Covariance_matrix#Definition)
 
 
 
@@ -154,16 +156,27 @@ https://en.wikipedia.org/wiki/Covariance_matrix#Definition
 
 $\vec{a}*\vec{b} = \vert \vec{a}\vert * \vert \vec{b}\vert * cos\theta$
 
-which is equal to  $\vec{a}^T * \vec{b}$ 
+which is equal to  $\vec{a}^T \cdot \vec{b}$  ([Dot product - Wikipedia](https://en.wikipedia.org/wiki/Dot_product))
 
-Note we denote $S$ as covariance matrix
+
+
+**Linear Algebra**
+
+[Transpose - Wikipedia](https://en.wikipedia.org/wiki/Transpose#Properties)
+$$
+\begin{aligned}A^{T}B &=-5\\ A^{T}B&=\left[ -5\right] \\ B^{T}A&=\left[ -5\right] ^{T}=\left[ -5\right] \end{aligned}
+$$
+
+
+Let's get started
 
 **After centering the data, we want to maximize the projected variance**
 
-Assuming the unit projected direction/vector is $u_1$
+> PCA is a distance-based algorithm
 
+Our target is to maximize the sum of squared projections as some of projections might be negatives
 
-
+Assuming the unit projected direction/vector is $u_1$ and we denote $S$ as covariance matrix
 
 $$
 \begin{aligned} J &=\frac{1}{N} \sum_{i=1}^{N}\left(\left(x_{i}-\bar{x}\right)^{\top} u_{1}\right)^{2} \quad \text { s.t. }\left|u_{1}\right|=1 \text { s.t. } u_{1}^{\top} u_{1}=1 \\ &=\sum_{i=1}^{N} \frac{1}{n} u_{1}^{\top}\left(x_{i}-\bar{x}\right) \cdot\left(x_{i}-\bar{x}\right)^{\top} u_{1} \\ &=u_{1}^{\top}\left(\sum_{i=1}^{N} \frac{1}{n}\left(x_{i}-\bar{x}\right) \cdot\left(x_{i}-\bar{x}\right)^{\top}\right) u_{1} \\ &=u_{i}^{\top} \cdot S \cdot u_{1} \end{aligned}
@@ -185,7 +198,7 @@ with [Lagrange multiplier](https://en.wikipedia.org/wiki/Lagrange_multiplier) an
 $$
 \begin{array}{c}{\mathcal{L}\left(u_{1}, \lambda\right)=u_{1}^{\top} S u_{1}+\lambda\left(1-u_{1}^{\top} u\right)} \\ {\frac{\partial \mathcal{L}}{\partial u_{1}}=2 S \cdot u_{1}-\lambda \cdot 2 u_{1}=0} \\ {S u_{1}=\lambda u_{1}}\end{array}
 $$
-BAM! For matrix S, $u_1$ is eigenvector and $\lambda$ is eigenvalue
+BAM! For covariance matrix S, $u_1$ is eigenvector and $\lambda$ is eigenvalue
 
 
 
