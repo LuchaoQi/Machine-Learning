@@ -15,7 +15,7 @@ def pca(data):
     print('Loadings of PC1')
     print(loadings[:,0])
     print('Projections on PC1')
-    print(np.dot(data.T,loadings[:,0]))
+    print(data.T@loadings[:,0])
     
 
 x = [-1,-1,0,2,0]
