@@ -140,8 +140,6 @@ https://stackoverflow.com/a/40801571/11964524
 
 **Definition of covariance matrix**
 
-[【机器学习】【白板推导系列】【合集 1～23】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1aE411o7qd?p=23)
-
 [Covariance matrix - Wikipedia](https://en.wikipedia.org/wiki/Covariance_matrix#Definition)
 
 
@@ -157,12 +155,11 @@ $$
 \begin{aligned}A^{T}B &=-5\\ A^{T}B&=\left[ -5\right] \\ B^{T}A&=\left[ -5\right] ^{T}=\left[ -5\right] \end{aligned}
 $$
 
-
 **Projected distance** 
 
-[Dot product - Wikipedia](https://en.wikipedia.org/wiki/Dot_product)
+[Dot product - Wikipedia](https://en.wikipedia.org/wiki/Dot_product#Scalar_projection_and_first_properties)
 
-$\vec{a} \cdot \vec{b} = \vert \vec{a}\vert \cdot \vert \vec{b}\vert \cdot cos\theta = \vec{a} \cdot \vec{b}^T = \vec{a}^T \cdot \vec{b}$
+$\vec{a} \cdot \vec{b} = \vert \vec{a}\vert \cdot \vert \vec{b}\vert \cdot cos\theta = \vec{a} \cdot \vec{b}^T = \vec{b} \cdot \vec{a^T}= \vec{a}^T \cdot \vec{b}$
 
 
 
@@ -399,6 +396,8 @@ https://github.com/heucoder/dimensionality_reduction_alo_codes/blob/master/codes
 
 
 ## Resources
+
+[【机器学习】【白板推导系列】【合集 1～23】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1aE411o7qd?p=23)
 
 [Principal Component Analysis in 3 Simple Steps](https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html)
 
