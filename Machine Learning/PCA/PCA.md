@@ -159,8 +159,13 @@ $$
 
 [Dot product - Wikipedia](https://en.wikipedia.org/wiki/Dot_product#Scalar_projection_and_first_properties)
 
-$\vec{a} \cdot \vec{b} = \vert \vec{a}\vert \cdot \vert \vec{b}\vert \cdot cos\theta = \vec{a} \cdot \vec{b}^T = \vec{b} \cdot \vec{a^T}= \vec{a}^T \cdot \vec{b}$
 
+
+$$
+\vec{a} \cdot \vec{b} = \vert \vec{a}\vert \cdot \vert \vec{b}\vert \cdot cos\theta = \vec{a} \cdot \vec{b}^T = \vec{b} \cdot \vec{a^T}= \vec{a}^T \cdot \vec{b}
+\\
+\begin{aligned}proj &=\left\| \overrightarrow{a}\right\| \cdot \cos \theta \\ &=\dfrac{\overrightarrow{a}\cdot \overrightarrow{b}}{\left\| \overrightarrow{b}\right\| }\\ &=\overrightarrow{a}\cdot \overrightarrow{\widehat{b}}\end{aligned}
+$$
 
 
 Let's get started
