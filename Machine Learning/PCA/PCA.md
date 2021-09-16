@@ -141,13 +141,12 @@ https://stackoverflow.com/a/40801571/11964524
 **Definition of covariance matrix**
 
 [Covariance matrix - Wikipedia](https://en.wikipedia.org/wiki/Covariance_matrix#Definition)
+$$
+S \text{(covariance matrix)}=\frac{1}{N} \sum_{i=1}^{N}\left(x_{i}-\bar{x}\right)\left(x_{i}-\bar{x}\right)^{\top}=\frac{1}{N} X^{\top} H X
 
-
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/83bec85f5e2cab5d3406677dd806e554a442331f)
-
-
-
+\\
+H_{N} \text{(centering matrix)} = I_{N}-\frac{1}{N} 1_{N} 1_{N}^{T}
+$$
 **Linear Algebra**
 
 [Transpose - Wikipedia](https://en.wikipedia.org/wiki/Transpose#Properties)
@@ -390,19 +389,25 @@ So in the example it is $1/5 * Z^TZ$ while in code it is $1/4 * Z^TZ$
 
 
 
-### Python
-
-[Principal Component Analysis for Dimensionality Reduction in Python](https://machinelearningmastery.com/principal-components-analysis-for-dimensionality-reduction-in-python/?__s=j5spgttw6xiv8t5nozzl)
-
-[how to do it in python mechanically](https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html#a-summary-of-the-pca-approach)
-
-https://github.com/heucoder/dimensionality_reduction_alo_codes/blob/master/codes/PCA/PCA.py#L13
-
 
 
 ## Resources
 
+
+
+[<mark>Principal Component Analysis (sebastianraschka.com)</mark>](https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html#a-summary-of-the-pca-approach)
+
+[heucoder/dimensionality_reduction_alo_codes: 特征提取/数据降维:PCA、LDA、MDS、LLE、TSNE等降维算法的python实现 (github.com)](https://github.com/heucoder/dimensionality_reduction_alo_codes)
+
+[机器学习-白板推导系列(五)-降维（Dimensionality Reduction）笔记 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/326074168)
+
 [【机器学习】【白板推导系列】【合集 1～23】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1aE411o7qd?p=23)
+
+[How to Calculate Principal Component Analysis (PCA) from Scratch in Python (machinelearningmastery.com)](https://machinelearningmastery.com/calculate-principal-component-analysis-scratch-python/)
+
+
+
+
 
 [Principal Component Analysis in 3 Simple Steps](https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html)
 
