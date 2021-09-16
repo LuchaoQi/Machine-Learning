@@ -2,6 +2,29 @@
 
 ### SVD - PCoA (Principle Coordinate Analysis)
 
+This is the best post I've ever found explaining SVD in PCA
+
+[<mark>dimensionality reduction - Relationship between SVD and PCA. How to use SVD to perform PCA? - Cross Validated (stackexchange.com)</mark>](https://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca)
+
+
+$$
+\mathbf{C} \text{(covariance matrix)}=\mathbf{X}^{\top} \mathbf{X} /(n-1)
+\\
+\text{It is a symmetric matrix and so it can be diagonalized:
+}
+\\
+
+ \mathbf{C}=\mathbf{V} \mathbf{L} \mathbf{V}^{\top} 
+\\
+\text{If we now perform singular value decomposition of X, we obtain a decomposition}
+\\
+
+ \mathbf{X}=\mathbf{U S} \mathbf{V}^{\top} 
+
+\\
+
+ \mathbf{C}=\mathbf{V S} \mathbf{U}^{\top} \mathbf{U S V}^{\top} /(n-1)=\mathbf{V} \frac{\mathbf{S}^{2}}{n-1} \mathbf{V}^{\top} 
+$$
 
 
 [Eigendecomposition of a matrix - Wikipedia](https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix#Eigendecomposition_of_a_matrix)
@@ -20,7 +43,8 @@ $$
 $$
 
 
-Compare form of eigen-decomposition vs. SVD, it's easy to find that $V$ contains eigenvectors and $\Sigma^2$ contains eigenvalues
+
+Compare forms of eigen-decomposition vs. SVD, it's easy to find that $V$ contains eigenvectors and $\Sigma^2$ contains eigenvalues
 
 
 
@@ -409,7 +433,7 @@ So in the example it is $1/5 * Z^TZ$ while in code it is $1/4 * Z^TZ$
 
 
 
-
+[dimensionality reduction - Relationship between SVD and PCA. How to use SVD to perform PCA? - Cross Validated (stackexchange.com)](https://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca)
 
 [Lihang/pca.py at master · SmirkCao/Lihang (github.com)](https://github.com/SmirkCao/Lihang/blob/master/CH16/pca.py)
 
@@ -423,7 +447,7 @@ So in the example it is $1/5 * Z^TZ$ while in code it is $1/4 * Z^TZ$
 
 [【机器学习】【白板推导系列】【合集 1～23】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1aE411o7qd?p=23)
 
-[How to Calculate Principal Component Analysis (PCA) from Scratch in Python (machinelearningmastery.com)](
+[How to Calculate Principal Component Analysis (PCA) from Scratch in Python (machinelearningmastery.com)](https://machinelearningmastery.com/calculate-principal-component-analysis-scratch-python/)
 
 
 
