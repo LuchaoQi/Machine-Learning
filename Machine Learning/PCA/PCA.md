@@ -1,5 +1,27 @@
 
 
+### SVD - PCoA (Principle Coordinate Analysis)
+
+
+
+[Eigendecomposition of a matrix - Wikipedia](https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix#Eigendecomposition_of_a_matrix)
+
+
+
+![](https://i.loli.net/2020/08/13/yPjYXZG7qJLvuA3.png)
+
+
+
+[机器学习-白板推导系列(五)-降维（Dimensionality Reduction）笔记 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/326074168)
+
+
+$$
+\begin{aligned} S &=\frac{1}{N} X^{T} H^{T} H X \\ &=\frac{1}{N}(H X)^{T} H X \\ &=\left(U \Sigma V^{T}\right)^{T} U \Sigma V^{T} \\ &=V \Sigma^{T} U^{T} U \Sigma V^{T} \\ &=V \Sigma^{T} \Sigma V^{T} \end{aligned}
+$$
+
+
+Compare form of eigen-decomposition vs. SVD, it's easy to find that $V$ contains eigenvectors and $\Sigma^2$ contains eigenvalues
+
 
 
 ### [Why are principal component scores uncorrelated?](https://stats.stackexchange.com/questions/153928/why-are-principal-component-scores-uncorrelated)
@@ -26,11 +48,7 @@ https://builtin.com/data-science/step-step-explanation-principal-component-analy
 
 
 
-### [EigenValue Decomposition, EigenVectors, EigenValue](https://blog.paperspace.com/dimension-reduction-with-principal-component-analysis/)
 
-
-
-![](https://i.loli.net/2020/08/13/yPjYXZG7qJLvuA3.png)
 
 
 
@@ -391,6 +409,12 @@ So in the example it is $1/5 * Z^TZ$ while in code it is $1/4 * Z^TZ$
 
 
 
+
+
+[Lihang/pca.py at master · SmirkCao/Lihang (github.com)](https://github.com/SmirkCao/Lihang/blob/master/CH16/pca.py)
+
+[Statistical-Learning-Methods/PCA.py at master · SleepyBag/Statistical-Learning-Methods (github.com)](https://github.com/SleepyBag/Statistical-Learning-Methods/blob/master/16.PCA/PCA.py)
+
 [<mark>Principal Component Analysis (sebastianraschka.com)</mark>](https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html#a-summary-of-the-pca-approach)
 
 [heucoder/dimensionality_reduction_alo_codes: 特征提取/数据降维:PCA、LDA、MDS、LLE、TSNE等降维算法的python实现 (github.com)](https://github.com/heucoder/dimensionality_reduction_alo_codes)
@@ -399,9 +423,7 @@ So in the example it is $1/5 * Z^TZ$ while in code it is $1/4 * Z^TZ$
 
 [【机器学习】【白板推导系列】【合集 1～23】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1aE411o7qd?p=23)
 
-[How to Calculate Principal Component Analysis (PCA) from Scratch in Python (machinelearningmastery.com)](https://machinelearningmastery.com/calculate-principal-component-analysis-scratch-python/)
-
-
+[How to Calculate Principal Component Analysis (PCA) from Scratch in Python (machinelearningmastery.com)](
 
 
 
