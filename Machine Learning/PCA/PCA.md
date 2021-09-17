@@ -2,11 +2,13 @@
 
 ### SVD - PCoA (Principle Coordinate Analysis)
 
+[Covariance matrix - Wikipedia](https://en.wikipedia.org/wiki/Covariance_matrix#Estimation)
+
 This is the best post I've ever found explaining SVD in PCA
 
 [<mark>dimensionality reduction - Relationship between SVD and PCA. How to use SVD to perform PCA? - Cross Validated (stackexchange.com)</mark>](https://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca)
 
-
+![](https://i.ibb.co/sK0hPdj/image.png)
 $$
 \mathbf{C} \text{(covariance matrix)}=\mathbf{X}^{\top} \mathbf{X} /(n-1)
 \\
@@ -23,8 +25,9 @@ $$
 
 \\
 
- \mathbf{C}=\mathbf{V S} \mathbf{U}^{\top} \mathbf{U S V}^{\top} /(n-1)=\mathbf{V} \frac{\mathbf{S}^{2}}{n-1} \mathbf{V}^{\top} 
+ \mathbf{C}=\mathbf{V S} \mathbf{U}^{\top} \mathbf{U S V}^{\top} /(n-1)=\mathbf{V} \frac{\mathbf{S}^{2}}{n-1} \mathbf{V}^{\top} 
 $$
+
 
 
 [Eigendecomposition of a matrix - Wikipedia](https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix#Eigendecomposition_of_a_matrix)
@@ -37,9 +40,12 @@ $$
 
 [机器学习-白板推导系列(五)-降维（Dimensionality Reduction）笔记 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/326074168)
 
+[Centering matrix - Wikipedia](https://en.wikipedia.org/wiki/Centering_matrix)
+
+
 
 $$
-\begin{aligned} S &=\frac{1}{N} X^{T} H^{T} H X \\ &=\frac{1}{N}(H X)^{T} H X \\ &=\left(U \Sigma V^{T}\right)^{T} U \Sigma V^{T} \\ &=V \Sigma^{T} U^{T} U \Sigma V^{T} \\ &=V \Sigma^{T} \Sigma V^{T} \end{aligned}
+\begin{aligned} S &=\frac{1}{n-1} X^{T} H^{T} H X \\ &=\frac{1}{n-1}{N}(H X)^{T} H X \\ &=\frac{1}{n-1} \left(U \Sigma V^{T}\right)^{T} U \Sigma V^{T} \\ &=\frac{1}{n-1} V \Sigma^{T} U^{T} U \Sigma V^{T} \\ &=\frac{1}{n-1} V \Sigma^{T} \Sigma V^{T} \end{aligned}
 $$
 
 
@@ -178,7 +184,7 @@ https://stackoverflow.com/a/40801571/11964524
 
 **Definition of covariance matrix**
 
-[Covariance matrix - Wikipedia](https://en.wikipedia.org/wiki/Covariance_matrix#Definition)
+[Covariance matrix - Wikipedia](https://en.wikipedia.org/wiki/Covariance_matrix#Estimation)
 $$
 S \text{(covariance matrix)}=\frac{1}{N} \sum_{i=1}^{N}\left(x_{i}-\bar{x}\right)\left(x_{i}-\bar{x}\right)^{\top}=\frac{1}{N} X^{\top} H X
 
