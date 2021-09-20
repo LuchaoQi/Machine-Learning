@@ -185,6 +185,8 @@ https://stackoverflow.com/a/40801571/11964524
 **Definition of covariance matrix**
 
 [Covariance matrix - Wikipedia](https://en.wikipedia.org/wiki/Covariance_matrix#Estimation)
+
+[<mark>dimensionality reduction - Relationship between SVD and PCA. How to use SVD to perform PCA? - Cross Validated (stackexchange.com)</mark>](https://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca)
 $$
 S \text{(covariance matrix)}=\frac{1}{N} \sum_{i=1}^{N}\left(x_{i}-\bar{x}\right)\left(x_{i}-\bar{x}\right)^{\top}=\frac{1}{N} X^{\top} H X
 
@@ -192,6 +194,8 @@ S \text{(covariance matrix)}=\frac{1}{N} \sum_{i=1}^{N}\left(x_{i}-\bar{x}\right
 H_{N} \text{(centering matrix)} = I_{N}-\frac{1}{N} 1_{N} 1_{N}^{T}
 $$
 **Linear Algebra**
+
+[www.gatsby.ucl.ac.uk/teaching/courses/sntn/sntn-2017/resources/Matrix_derivatives_cribsheet.pdf](http://www.gatsby.ucl.ac.uk/teaching/courses/sntn/sntn-2017/resources/Matrix_derivatives_cribsheet.pdf)
 
 [Transpose - Wikipedia](https://en.wikipedia.org/wiki/Transpose#Properties)
 $$
